@@ -6,10 +6,11 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(__dirname));
 
-const MONGO_URI = 'mongodb://localhost:27017/';
+const MONGO_URI = 'mongodb://localhost:27017/booknook';
 
-mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(e => console.error('MongoDB connection error', e));
 

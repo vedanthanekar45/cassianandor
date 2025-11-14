@@ -48,11 +48,34 @@
             </div>
             
             <button type="submit" class="submit-btn">Register for Event</button>
-            <div id="form-success-message"></div>
         </form>
     </div>
 
-    <script src="validation.js"></script>
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                mobile: document.getElementById('mob').value,
+                event: document.getElementById('event').value
+            };
+            try {
+                const response = await fetch('http://localhost:3000/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                const data = await response.json();
+                if (data.ok) {
+                    alert("Registration successful!")
+                } else {
+                    alert(`Error: ${data.error}`)
+                }
+            } catch (error) {
+                alert("Server error")
+            }
+        });
+    </script>
 </body>
-
 </html>
