@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant List - The Book Nook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="logo">The Book Nook</h1>
+
+    <div class="container">
+        <h1>Event Participants</h1>
+        <p>Select an event to view the list of registered participants.</p>
+
+        <div class="event-selector">
+            <label for="eventSelect">Choose Event:</label>
+            <select id="eventSelect" onchange="loadParticipants()">
+                <option value="">-- Select an Event --</option>
+                <option value="1">Mystery Novel Book Club</option>
+                <option value="2">Author Talk & Signing</option>
+                <option value="3">Creative Writing Workshop</option>
+                <option value="4">Classic Literature Reading Group</option>
+                <option value="5">Children's Story Time</option>
+            </select>
+        </div>
+
+        <div id="participantSection" style="display: none;">
+            <div class="event-info">
+                <h2 id="selectedEventName"></h2>
+                <p><strong>Date:</strong> <span id="eventDate"></span></p>
+                <p><strong>Time:</strong> <span id="eventTime"></span></p>
+                <p><strong>Total Participants:</strong> <span id="totalParticipants"></span></p>
+            </div>
+
+            <h2>Registered Participants</h2>
+            <table class="participants-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="participantsList">
+                    <!-- Participants will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="noSelection" class="no-selection">
+            <p>Please select an event to view participants.</p>
+        </div>
+    </div>
+
+    <script>
+        async function getData() {
+            return fetch('participants.json').then(r => r.json());
+        }
+        async function loadParticipants() {
+            const eventId = document.getElementById('eventSelect').value;
+            const data = await getData();
+            if (!eventId) { 
+                document.getElementById('participantSection').style.display = 'none'; 
+                document.getElementById('noSelection').style.display = 'block'; return; 
+            }
+            const event = data[eventId]; 
+
+            document.getElementById('selectedEventName').textContent = event.name;
+            document.getElementById('eventDate').textContent = event.date; document.getElementById('eventTime').textContent = event.time;
+            document.getElementById('totalParticipants').textContent = event.participants.length;
+            document.getElementById('participantsList').innerHTML = event.participants.map(p => `<tr><td>${p.id}</td><td>${p.name}</td><td>${p.email}</td><td>${p.phone}</td></tr>`).join('');
+            document.getElementById('participantSection').style.display = 'block'; document.getElementById('noSelection').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

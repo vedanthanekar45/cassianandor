@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - The Book Nook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="logo">The Book Nook</h1>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About</a></li> 
+            <li><a class="active" href="contact.html">Contact</a></li> 
+            <li><a href="events.html">Event List</a></li> 
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out to us for any inquiries, suggestions, or event information.</p>
+        
+        <div class="contact-info-grid">
+            <div class="info-card">
+                <h3>Email</h3>
+                <p>info@thebooknook.com</p>
+                <p>support@thebooknook.com</p>
+            </div>
+            <div class="info-card">
+                <h3>Phone</h3>
+                <p>Main: +1 (555) 123-4567</p>
+                <p>Support: +1 (555) 123-4568</p>
+            </div>
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>123 Literary Lane</p>
+                <p>Book City, BC 12345</p>
+            </div>
+            <div class="info-card">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 10 AM - 8 PM</p>
+                <p>Sat-Sun: 9 AM - 6 PM</p>
+            </div>
+        </div>
+        
+        <h2>Send Us a Message</h2>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

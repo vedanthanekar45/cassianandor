@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - The Book Nook</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-page" id="loginPage">
+        <h1 class="logo">The Book Nook</h1>
+        
+        <div class="login-container">
+            <h2>Admin Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div class="dashboard-page" id="dashboardPage" style="display: none;">
+        <h1 class="logo">The Book Nook</h1>
+
+        <div class="container">
+        <h1>Admin Dashboard</h1>
+        <p>Manage your events from this dashboard. You can edit or delete events directly.</p>
+
+        <h2>Event Management</h2>
+        
+        <table class="events-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="eventsList">
+                <tr data-id="1">
+                    <td>1</td>
+                    <td>Mystery Novel Book Club</td>
+                    <td>Nov 20, 2025</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn" onclick="editEvent(1)">Edit</button>
+                        <button class="delete-btn" onclick="deleteEvent(1)">Delete</button>
+                    </td>
+                </tr>
+                <tr data-id="2">
+                    <td>2</td>
+                    <td>Author Talk & Signing</td>
+                    <td>Nov 27, 2025</td>
+                    <td>5:30 PM - 7:30 PM</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn" onclick="editEvent(2)">Edit</button>
+                        <button class="delete-btn" onclick="deleteEvent(2)">Delete</button>
+                    </td>
+                </tr>
+                <tr data-id="3">
+                    <td>3</td>
+                    <td>Creative Writing Workshop</td>
+                    <td>Dec 5, 2025</td>
+                    <td>3:00 PM - 6:00 PM</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn" onclick="editEvent(3)">Edit</button>
+                        <button class="delete-btn" onclick="deleteEvent(3)">Delete</button>
+                    </td>
+                </tr>
+                <tr data-id="4">
+                    <td>4</td>
+                    <td>Classic Literature Reading Group</td>
+                    <td>Dec 12, 2025</td>
+                    <td>7:00 PM - 9:00 PM</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn" onclick="editEvent(4)">Edit</button>
+                        <button class="delete-btn" onclick="deleteEvent(4)">Delete</button>
+                    </td>
+                </tr>
+                <tr data-id="5">
+                    <td>5</td>
+                    <td>Children's Story Time</td>
+                    <td>Every Saturday</td>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td class="action-buttons">
+                        <button class="edit-btn" onclick="editEvent(5)">Edit</button>
+                        <button class="delete-btn" onclick="deleteEvent(5)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
