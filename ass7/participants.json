@@ -4,11 +4,11 @@
         "date": "Nov 20, 2025",
         "time": "6:00 PM - 8:00 PM",
         "participants": [
-            { "id": 1, "name": "Alice Johnson", "email": "alice.j@email.com", "phone": "555-0101", "regdate": "Nov 10, 2025" },
-            { "id": 2, "name": "Bob Smith", "email": "bob.smith@email.com", "phone": "555-0102", "regdate": "Nov 11, 2025" },
-            { "id": 3, "name": "Carol White", "email": "carol.w@email.com", "phone": "555-0103", "regdate": "Nov 12, 2025" },
-            { "id": 4, "name": "David Brown", "email": "david.b@email.com", "phone": "555-0104", "regdate": "Nov 13, 2025" },
-            { "id": 5, "name": "Emma Davis", "email": "emma.d@email.com", "phone": "555-0105", "regdate": "Nov 14, 2025" }
+            { "id": 1, "name": "Cassian Andor", "email": "cassian.andor@email.com", "phone": "555-0101" },
+            { "id": 2, "name": "Luthen Rael", "email": "luthen.rael@email.com", "phone": "555-0102" },
+            { "id": 3, "name": "Mon Mothma", "email": "mon.mothma@email.com", "phone": "555-0103" },
+            { "id": 4, "name": "Bix Caleen", "email": "bix.caleen@email.com", "phone": "555-0104" },
+            { "id": 5, "name": "Dedra Meero", "email": "dedra.meero@email.com", "phone": "555-0105" }
         ]
     },
     {
@@ -16,13 +16,13 @@
         "date": "Nov 27, 2025",
         "time": "5:30 PM - 7:30 PM",
         "participants": [
-            { "id": 1, "name": "Frank Miller", "email": "frank.m@email.com", "phone": "555-0201", "regdate": "Nov 8, 2025" },
-            { "id": 2, "name": "Grace Lee", "email": "grace.lee@email.com", "phone": "555-0202", "regdate": "Nov 9, 2025" },
-            { "id": 3, "name": "Henry Wilson", "email": "henry.w@email.com", "phone": "555-0203", "regdate": "Nov 10, 2025" },
-            { "id": 4, "name": "Ivy Chen", "email": "ivy.chen@email.com", "phone": "555-0204", "regdate": "Nov 11, 2025" },
-            { "id": 5, "name": "Jack Taylor", "email": "jack.t@email.com", "phone": "555-0205", "regdate": "Nov 12, 2025" },
-            { "id": 6, "name": "Kate Anderson", "email": "kate.a@email.com", "phone": "555-0206", "regdate": "Nov 13, 2025" },
-            { "id": 7, "name": "Liam Murphy", "email": "liam.m@email.com", "phone": "555-0207", "regdate": "Nov 14, 2025" }
+            { "id": 1, "name": "Jimmy McGill", "email": "jimmy.mcgill@email.com", "phone": "555-0201" },
+            { "id": 2, "name": "Kim Wexler", "email": "kim.wexler@email.com", "phone": "555-0202" },
+            { "id": 3, "name": "Mike Ehrmantraut", "email": "mike.e@email.com", "phone": "555-0203" },
+            { "id": 4, "name": "Nacho Varga", "email": "nacho.varga@email.com", "phone": "555-0204" },
+            { "id": 5, "name": "Howard Hamlin", "email": "howard.hamlin@email.com", "phone": "555-0205" },
+            { "id": 6, "name": "Chuck McGill", "email": "chuck.mcgill@email.com", "phone": "555-0206" },
+            { "id": 7, "name": "Gus Fring", "email": "gus.fring@email.com", "phone": "555-0207" }
         ]
     },
     {
@@ -30,12 +30,12 @@
         "date": "Dec 5, 2025",
         "time": "3:00 PM - 6:00 PM",
         "participants": [
-            { "id": 1, "name": "Maya Patel", "email": "maya.p@email.com", "phone": "555-0301", "regdate": "Nov 5, 2025" },
-            { "id": 2, "name": "Noah Garcia", "email": "noah.g@email.com", "phone": "555-0302", "regdate": "Nov 6, 2025" },
-            { "id": 3, "name": "Olivia Martinez", "email": "olivia.m@email.com", "phone": "555-0303", "regdate": "Nov 7, 2025" },
-            { "id": 4, "name": "Peter Robinson", "email": "peter.r@email.com", "phone": "555-0304", "regdate": "Nov 8, 2025" },
-            { "id": 5, "name": "Quinn Adams", "email": "quinn.a@email.com", "phone": "555-0305", "regdate": "Nov 9, 2025" },
-            { "id": 6, "name": "Rachel Kim", "email": "rachel.k@email.com", "phone": "555-0306", "regdate": "Nov 10, 2025" }
+            { "id": 1, "name": "Kevin Garvey", "email": "kevin.garvey@email.com", "phone": "555-0301" },
+            { "id": 2, "name": "Nora Durst", "email": "nora.durst@email.com", "phone": "555-0302" },
+            { "id": 3, "name": "Matt Jamison", "email": "matt.jamison@email.com", "phone": "555-0303" },
+            { "id": 4, "name": "Laurie Garvey", "email": "laurie.garvey@email.com", "phone": "555-0304" },
+            { "id": 5, "name": "Jill Garvey", "email": "jill.garvey@email.com", "phone": "555-0305" },
+            { "id": 6, "name": "Tom Garvey", "email": "tom.garvey@email.com", "phone": "555-0306" }
         ]
     },
     {
@@ -43,10 +43,10 @@
         "date": "Dec 12, 2025",
         "time": "7:00 PM - 9:00 PM",
         "participants": [
-            { "id": 1, "name": "Samuel Clark", "email": "samuel.c@email.com", "phone": "555-0401", "regdate": "Nov 3, 2025" },
-            { "id": 2, "name": "Tina Lopez", "email": "tina.l@email.com", "phone": "555-0402", "regdate": "Nov 4, 2025" },
-            { "id": 3, "name": "Uma Singh", "email": "uma.s@email.com", "phone": "555-0403", "regdate": "Nov 5, 2025" },
-            { "id": 4, "name": "Victor Hall", "email": "victor.h@email.com", "phone": "555-0404", "regdate": "Nov 6, 2025" }
+            { "id": 1, "name": "Kino Loy", "email": "kino.loy@email.com", "phone": "555-0401" },
+            { "id": 2, "name": "Vel Sartha", "email": "vel.sartha@email.com", "phone": "555-0402" },
+            { "id": 3, "name": "Syril Karn", "email": "syril.karn@email.com", "phone": "555-0403" },
+            { "id": 4, "name": "Maarva Andor", "email": "maarva.andor@email.com", "phone": "555-0404" }
         ]
     },
     {
@@ -54,12 +54,12 @@
         "date": "Every Saturday",
         "time": "11:00 AM - 12:00 PM",
         "participants": [
-            { "id": 1, "name": "Sophie Turner (Parent)", "email": "sophie.t@email.com", "phone": "555-0501", "regdate": "Oct 20, 2025" },
-            { "id": 2, "name": "Tom Baker (Parent)", "email": "tom.b@email.com", "phone": "555-0502", "regdate": "Oct 22, 2025" },
-            { "id": 3, "name": "Wendy Green (Parent)", "email": "wendy.g@email.com", "phone": "555-0503", "regdate": "Oct 25, 2025" },
-            { "id": 4, "name": "Xavier Young (Parent)", "email": "xavier.y@email.com", "phone": "555-0504", "regdate": "Oct 28, 2025" },
-            { "id": 5, "name": "Yara Wright (Parent)", "email": "yara.w@email.com", "phone": "555-0505", "regdate": "Nov 1, 2025" },
-            { "id": 6, "name": "Zoe King (Parent)", "email": "zoe.k@email.com", "phone": "555-0506", "regdate": "Nov 3, 2025" }
+            { "id": 1, "name": "Lalo Salamanca", "email": "lalo.salamanca@email.com", "phone": "555-0501" },
+            { "id": 2, "name": "Francesca Liddy", "email": "francesca.l@email.com", "phone": "555-0502" },
+            { "id": 3, "name": "Patti Levin", "email": "patti.levin@email.com", "phone": "555-0503" },
+            { "id": 4, "name": "Holy Wayne", "email": "holy.wayne@email.com", "phone": "555-0504" },
+            { "id": 5, "name": "Meg Abbott", "email": "meg.abbott@email.com", "phone": "555-0505" },
+            { "id": 6, "name": "John Murphy", "email": "john.murphy@email.com", "phone": "555-0506" }
         ]
     }
 ]

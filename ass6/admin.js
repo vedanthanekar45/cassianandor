@@ -4,19 +4,12 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
-    // Simple validation (UI only)
     if (username === 'admin' && password === 'admin123') {
         document.getElementById('loginPage').style.display = 'none';
         document.getElementById('dashboardPage').style.display = 'block';
     } else {
-        alert('Invalid credentials! Try: admin / admin123');
+        alert('Invalid credentials!');
     }
-});
-
-document.getElementById('logoutBtn').addEventListener('click', function() {
-    document.getElementById('loginPage').style.display = 'block';
-    document.getElementById('dashboardPage').style.display = 'none';
-    document.getElementById('loginForm').reset();
 });
 
 function deleteEvent(id) {

@@ -60,6 +60,7 @@
         async function getData() {
             return fetch('participants.json').then(r => r.json());
         }
+        
         async function loadParticipants() {
             const eventId = document.getElementById('eventSelect').value;
             const data = await getData();
@@ -70,10 +71,18 @@
             const event = data[eventId]; 
 
             document.getElementById('selectedEventName').textContent = event.name;
-            document.getElementById('eventDate').textContent = event.date; document.getElementById('eventTime').textContent = event.time;
+            document.getElementById('eventDate').textContent = event.date; d
+            ocument.getElementById('eventTime').textContent = event.time;
             document.getElementById('totalParticipants').textContent = event.participants.length;
-            document.getElementById('participantsList').innerHTML = event.participants.map(p => `<tr><td>${p.id}</td><td>${p.name}</td><td>${p.email}</td><td>${p.phone}</td></tr>`).join('');
-            document.getElementById('participantSection').style.display = 'block'; document.getElementById('noSelection').style.display = 'none';
+            document.getElementById('participantsList').innerHTML = event.participants.map(p => 
+                `<tr>
+                    <td>${p.id}</td>
+                    <td>${p.name}</td>
+                    <td>${p.email}</td>
+                    <td>${p.phone}</td>
+                </tr>`).join('');
+            document.getElementById('participantSection').style.display = 'block'; 
+            document.getElementById('noSelection').style.display = 'none';
         }
     </script>
 </body>
