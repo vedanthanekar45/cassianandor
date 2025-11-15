@@ -66,13 +66,14 @@
             const data = await getData();
             if (!eventId) { 
                 document.getElementById('participantSection').style.display = 'none'; 
-                document.getElementById('noSelection').style.display = 'block'; return; 
+                document.getElementById('noSelection').style.display = 'block'; 
+                return; 
             }
-            const event = data[eventId]; 
+            const event = data[parseInt(eventId) - 1];
 
             document.getElementById('selectedEventName').textContent = event.name;
-            document.getElementById('eventDate').textContent = event.date; d
-            ocument.getElementById('eventTime').textContent = event.time;
+            document.getElementById('eventDate').textContent = event.date;
+            document.getElementById('eventTime').textContent = event.time;
             document.getElementById('totalParticipants').textContent = event.participants.length;
             document.getElementById('participantsList').innerHTML = event.participants.map(p => 
                 `<tr>
